@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title></title>
+</head>
+<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../../common/dhtmlxLayout/codebase/dhtmlxcommon.js"></script>
+<script src="../../common/dhtmlxLayout/codebase/dhtmlxcontainer.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxLayout/codebase/dhtmlxlayout.css">
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css">
+<script src="../../common/dhtmlxLayout/codebase/dhtmlxlayout.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxToolbar/codebase/skins/dhtmlxtoolbar_dhx_skyblue.css">
+<script src="../../common/dhtmlxToolbar/codebase/dhtmlxtoolbar.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxTree/codebase/dhtmlxtree.css">
+<script src="../../common/dhtmlxTree/codebase/dhtmlxtree.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxGrid/codebase/dhtmlxgrid.css">
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxGrid/codebase/skins/dhtmlxgrid_dhx_skyblue.css">
+<script src="../../common/dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
+<script src="../../common/dhtmlxGrid/codebase/dhtmlxgridcell.js"></script>
+<link rel="stylesheet" type="text/css" href="../../common/dhtmlxEditor/codebase/skins/dhtmlxeditor_dhx_skyblue.css">
+<script src="../../common/dhtmlxEditor/codebase/dhtmlxeditor.js"></script>
+
+<body onload="doOnLoad();">
+<table width="100%" height="100%" border="0" cellspacing="10" cellpadding="0">
+<tr>
+    <td class="title">预约管理 -&gt; 会议室预约 -&gt; 会议室预约申请</td>
+</tr>
+<tr>
+<td valign="top" height="100%">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td height="27">
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="op_nor" onclick="javascript:location.href='page02_hysyy_new.html'">预约基本信息</td>
+                <td class="op_nor" onclick="javascript:location.href='page02_hysyy_rc.html'">预约日程</td>
+                <td class="op_act" onclick="javascript:location.href='page02_hysyy_zx.html'">会议室申请</td>
+                <td class="op_nor" onclick="javascript:location.href='page02_hysyy_zy.html'">会议设备申请</td>
+                <td class="op_nor" onclick="javascript:location.href='page02_hysyy_yl.html'">预约信息提交</td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+<td valign="top" height="420">
+<div id="zuoxi" style="width: 100%; height: 100%; overflow: auto; display: none;">
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+<tr>
+    <td width="25%" height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><p><img src="../../images/ico/64x64/121.png" width="64"
+                                                       height="64"/><br/>
+                    <span class="title">101</span></p></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td width="25%" height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">102</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#aae4ff" onclick="javascript:alert('当前教室已被占用!')" style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/119.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">103</span></td>
+                <td><p>已占用<br/>
+                    实验室周例会<br/>
+                    张磊<br/>
+                    2013-2-26 13:00:00 至 <br/>
+                    2013-2-26 17:00:00</p></td>
+            </tr>
+        </table>
+    </td>
+    <td width="25%" height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">104</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">201</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#aae4ff" onclick="javascript:alert('当前教室已被占用!')" style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/119.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">202</span></td>
+                <td><p>已占用<br/>
+                    实验室预约系统项目报告会<br/>
+                    周慧<br/>
+                    2013-2-25 13:00:00 至<br/>
+                    2013-2-25 17:00:00</p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">203</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">204</span></td>
+                <td><p> 空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td height="110" bgcolor="#aae4ff" onclick="javascript:alert('当前教室已被占用!')" style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/119.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">301</span></td>
+                <td><p>已占用<br/>
+                    无线互联课程研讨会<br/>
+                    方浩<br/>
+                    2013-2-24 13:00:00至<br/>
+                    2013-2-28 17:00:00</p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">302</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">302</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">302</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">402</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">402</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#E4FFAA" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">403</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+    <td height="110" bgcolor="#e4ffaa" onclick="javascript:location.href='page02_hysyy_zx2.html'"
+        style="cursor:hand;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="40%" align="center"><img src="../../images/ico/64x64/121.png" width="64"
+                                                    height="64"/><br/>
+                    <span class="title">402</span></td>
+                <td><p>空闲<br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</div>
+<div id="parentId"
+     style="position: relative; top: 0px; left: 0px; width: 100%; height: 100%; aborder: #B5CDE4 1px solid;"></div>
+<script>var dhxLayout, dhxToolbar, dhxTree, editor;
+function doOnLoad() {
+    dhxLayout = new dhtmlXLayoutObject("parentId", "1C");
+    dhxToolbar = dhxLayout.attachToolbar();
+    dhxToolbar.setIconsPath("../../common/dhtmlxToolbar/samples/common/imgs/");
+    dhxToolbar.loadXML("common/toolbar.xml?" + new Date().getTime());
+    dhxToolbar.attachEvent("onClick", function (id) {
+        switch (id) {
+            case 'save' :
+                alert("保存当前数据!")
+                break;
+            case 'prev' :
+                window.location.href = 'page02_hysyy_rc.html';
+                break;
+            case 'next' :
+                window.location.href = 'page02_hysyy_zy.html';
+                break;
+            default:
+                alert("Button " + id + " was clicked!")
+        }
+    });
+
+    dhxLayout.cells("a").setText("选择教室");
+    dhxLayout.cells("a").attachObject("zuoxi");
+
+}</script>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

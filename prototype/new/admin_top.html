@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+
+</style>
+<title><%= title %> - 管理页面</title>
+<script language=JavaScript>
+function logout(){
+	if (confirm("您确定要退出控制面板吗？"))
+	top.location = "out.asp";
+	return false;
+}
+</script>
+<script language=JavaScript1.2>
+function showsubmenu(sid) {
+	var whichEl = eval("submenu" + sid);
+	var menuTitle = eval("menuTitle" + sid);
+	if (whichEl.style.display == "none"){
+		eval("submenu" + sid + ".style.display=\"\";");
+	}else{
+		eval("submenu" + sid + ".style.display=\"none\";");
+	}
+}
+</script>
+<meta http-equiv=Content-Type content=text/html;charset=gb2312>
+<meta http-equiv="refresh" content="60">
+<script language=JavaScript1.2>
+function showsubmenu(sid) {
+	var whichEl = eval("submenu" + sid);
+	var menuTitle = eval("menuTitle" + sid);
+	if (whichEl.style.display == "none"){
+		eval("submenu" + sid + ".style.display=\"\";");
+	}else{
+		eval("submenu" + sid + ".style.display=\"none\";");
+	}
+}
+
+</script>
+<base target="main">
+<link href="images/skin.css" rel="stylesheet" type="text/css">
+
+</head>
+<body leftmargin="0" topmargin="0">
+<div class="top">
+     <div class="top_left"><img src="images/logo.gif" width="305" height="103"></div>
+     <div class="top_right">
+          <div class="top_right_top"><span>您好！张超 [超级管理员]|[退出]| 登陆</span><span style="float:right">帮助？ </span></div>
+          <ul class="top_right_menu">
+            <li class="active"><a href="javascript:void(0)">预约管理</a></li>
+            <li><a href="javascript:void(0)">首页</a></li>
+            <li><a href="javascript:void(0)">首页</a></li>
+            <li><a href="javascript:void(0)">首页</a></li>
+            <li><a href="javascript:void(0)">首页</a></li>
+            <li><a href="javascript:void(0)">首页</a></li>
+          </ul>
+     </div>
+</div>
+
+</body>
+</html>

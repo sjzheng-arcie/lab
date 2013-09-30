@@ -1,0 +1,32 @@
+/*通用样式*/
+body{font-size:12px;font-family:"宋体",Georgia, "Times New Roman", Times, serif; background:url(../img/bg.jpg) repeat-x;}
+*{padding:0;margin:0}
+li{list-style:none}
+img{border:none}
+a img{border:none}
+a{text-decoration:none}
+input{vertical-align:middle;}
+a:hover{text-decoration:underline;}
+
+
+
+
+.indexMainCon{ width:100%; height:100%}
+.indexNews{width:48%; border:1px solid #ccc; margin-left:10px; float:left; display:inline; margin-top:10px; height:auto}
+.indexMainCon h3{ background:url(../img/index/h3.jpg) repeat-x; height:26px; line-height:26px; font-size:13px; color:#003A8A; padding:0 10px; font-weight:500; border-bottom:1px solid #ccc;}
+.indexMainCon h3 a{ float:right;color:#666}
+.indexMainCon ul{ padding:0 10px; margin-top:10px;}
+.indexMainCon ul li{ padding-left:15px; background:url(../img/li.jpg) no-repeat left center; line-height:26px;}
+.indexMainCon ul li span{ float:right; background:none}
+.indexMainCon ul li a{ color:#000}
+.indexMainCon h3 span{ padding-left:25px;}
+.indexNews span{ background:url(../img/index/n.jpg) no-repeat left center;}
+.indexNotice span{ background:url(../img/index/indexNotice.jpg) no-repeat left center;}
+.indexNotice{  float:right; width:48%; margin-right:10px; display:inline; margin-top:10px; border:1px solid #ccc;}
+.indextrends span{ background:url(../img/index/new.jpg) no-repeat left center;}
+.indexNoticeCon{ padding:0 10px; margin-top:10px;}
+.indexNoticeCon p{ line-height:22px; text-indent:2em;}
+.title td{ font-size:13px; color:#0051a8}
+
+
+

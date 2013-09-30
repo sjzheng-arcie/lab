@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<toolbar>
+    <item id="new" type="button" img="new.gif" imgdis="new.gif" text="新增"/>
+    <item id="del" type="button" img="cut.gif" imgdis="cut.gif" text="删除"/>
+    <item id="sep2" type="separator"/>
+</toolbar>

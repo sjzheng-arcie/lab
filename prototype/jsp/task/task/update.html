@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link href="../../../css/skin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../js/util.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script>
+
+  function checkAll(box){  //全选或全不选
+	form1.checkbox.checked = box.checked;
+  	if(form1.idcheckbox == null)
+  		return;
+  	var numRow = form1.idcheckbox.length;
+  	if(numRow == null) {
+  		form1.idcheckbox.checked = box.checked;	
+  		return;
+  	}
+  	if(box.checked) {
+		for (var i = 0; i < numRow; i++) {
+			form1.idcheckbox[i].checked = true;
+		}
+	} else {
+		for (var i = 0; i < numRow; i++) {
+			form1.idcheckbox[i].checked = false;
+		}
+	}
+  }
+  
+  function checkOne(){  //选一个时全选或全不选
+  	
+  	if(form1.idcheckbox == null)
+  		return;
+  	var numRow = form1.idcheckbox.length;
+  	if(numRow == null) {
+		form1.checkbox.checked = form1.idcheckbox.checked;
+		return;
+  	}
+  	var numBox =0;
+	for (var i = 0; i < numRow; i++) {
+		if(form1.idcheckbox[i].checked){
+			numBox++;
+		}
+	}
+	if(numBox==numRow){
+		form1.checkbox.checked = true;
+	}else {
+		form1.checkbox.checked = false;
+	}
+  }
+
+ function toUpdate(){
+ if(document.form1.idcheckbox==null){
+		  return;
+	}
+	   var len = document.form1.idcheckbox.length;
+	   var flag = 0;
+	   if(len!=undefined)
+	   {
+		  for(var i=0;i<len;i++)
+		  {
+			if(eval(document.form1.idcheckbox[i].checked))
+			{
+				flag++;
+			}
+		 }
+	  }else
+	  {
+		if(document.form1.idcheckbox.checked)
+		{
+			flag++;
+		}
+	  }
+	
+	 if(flag==0)
+	 {
+		alert("请选择一条记录！");
+		return;
+	 }else if(flag!=1)
+	 {
+		alert("请只选择一条记录，不要多选！");
+		return;
+	 }
+	 if(confirm("是否修改？"))
+	 {
+		document.form1.action="update.html";
+		document.form1.submit();
+	 }
+	
+}
+function toDelete(){
+ if(document.form1.idcheckbox==null){
+		  return;
+	}
+	   var len = document.form1.idcheckbox.length;
+	   var flag = 0;
+	   if(len!=undefined)
+	   {
+		  for(var i=0;i<len;i++)
+		  {
+			if(eval(document.form1.idcheckbox[i].checked))
+			{
+				flag++;
+			}
+		 }
+	  }else
+	  {
+		if(document.form1.idcheckbox.checked)
+		{
+			flag++;
+		}
+	  }
+	
+	 if(flag==0)
+	 {
+		alert("请至少选择一条记录！");
+		return;
+	 }
+	 if(confirm("是否删除所选记录？"))
+	 {
+		document.form1.action="";
+		document.form1.submit();
+	 }
+	
+}
+	//获得divwidth的宽度
+	function getwidth(){
+		document.getElementById("divwidth").style.width= document.body.offsetWidth-35+"px";
+		if(document.body.scrollWidth>document.body.offsetWidth){
+			document.getElementById("divwidth").style.width=document.body.scrollWidth-35+"px";
+		}
+	}
+	function addend(){
+		document.form1.action="list.html";
+		document.form1.submit();
+	}
+</script>
+
+</head>
+
+<body onload="getwidth()"  onresize="getwidth()">
+
+<form name="form1" method="post">
+
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="17" valign="top" background="../../../images/mail_leftbg.gif">
+    	<img src="../../../images/left-top-right.gif" width="17" height="29" />
+    </td>
+    <td valign="top" background="../../../images/content-bg.gif">
+        <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+        <tr>
+            <td height="31"><div class="titlebt">考核管理 > 任务评分</div></td>
+        </tr>
+        </table>
+    </td>
+    <td width="16" valign="top" background="../../../images/mail_rightbg.gif">
+    	<img src="../../../images/nav-right-bg.gif" width="16" height="29" />
+    </td>
+  </tr>
+  <tr>
+	<td valign="middle" background="../../../images/mail_leftbg.gif">&nbsp;</td>
+    <td valign="top" bgcolor="#F7F8F9">
+       	<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+    			<td height="30">
+    				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      					<tr>
+        					<td height="24" bgcolor="#353c44">
+        						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          							<tr>
+            							<td>
+            								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              									<tr>
+                									<td width="6%" height="19" valign="bottom"><div align="center"><img src="../../../images/tb.gif" width="14" height="14" /></div></td>
+                									<td width="94%" valign="bottom"><span class="STYLE1">任务信息</span></td>
+              									</tr>
+            								</table>
+            							</td>
+            							<td><div align="right"><span class="STYLE1">&nbsp;</span><span class="STYLE1"> &nbsp;</span></div>
+              							</td>
+          							</tr>
+        						</table>
+        					</td>
+      					</tr>
+    				</table>
+    			</td>
+  			</tr>
+ 			<tr valign="top">
+    			<td>
+    			<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce" >
+      					<tr bgcolor="#FFFFFF">
+        					<td   bgcolor="#FFFFFF">
+					  			<table border="0" cellpadding="2" cellspacing="1" style="width:100%;height:100%;font-size:12px;font-family: Verdana, Arial, Helvetica, sans-serif;"  bgcolor="#E3E9EE">
+					 				<tr>
+					    				<td nowrap align="right"  >任务编号:</td>
+					    				<td nowrap >
+					    					<input name="us_sno" id="us_sno" onblur="" class="text" style="width:154px" maxlength="20" valid="required|isAccount" value="SJ001" readonly/>
+					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
+					    					<span style="color:red;"  id="errMsg_us_sno"></span>
+					     				</td>
+					    				<td nowrap align="right"  >任务名称:</td>
+					    				<td nowrap>
+					    					<input name="us_sno" id="us_sno" onblur="" class="text" style="width:154px" maxlength="20" valid="required|isAccount" value="软件工程清考试题" readonly/>
+					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
+					    					<span style="color:red;"  id="errMsg_us_sno"></span>
+					     				</td>
+										
+					    			</tr>
+					    			<tr>
+					    				<td nowrap align="right">负责人:</td>
+					    				<td nowrap>
+					    					<input name="us_sno" id="us_sno"  onblur="" class="text" style="width:154px" maxlength="20" valid="required|isAccount" value="软件工程" readonly/>
+					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
+					    					<span style="color:red;"  id="errMsg_us_sno"></span>
+					    					
+					    				</td>
+					    				<td nowrap align="right">到期时间:</td>
+					    				<td nowrap>
+					    					<input name="us_sno" id="us_sno" onblur="" class="text" style="width:154px" maxlength="20" valid="required|isAccount" value="2012-02-12" readonly/>
+					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
+					    					<span style="color:red;"  id="errMsg_us_sname"></span> 
+					    				</td>
+					    
+					  				</tr>
+					  				
+									<tr>
+					    				<td nowrap align="right">任务内容:</td>
+					    
+					    					<td colspan="3"><textarea style="width:70%;height:100px">部署新到的实验设备</textarea>
+					    					<span style="color:red;"> *</span> &nbsp;&nbsp;
+					    					<span style="color:red;"  id="errMsg_us_spwd"></span>
+					    				</td>
+						     		</tr>
+						     		<tr>
+					    				<td nowrap align="right">备注:</td>
+					    			
+					    					<td colspan="3"><textarea style="width:70%;height:100px">由于实验室没有空位，不能一次部署完毕</textarea>
+					    					<span style="color:red;"> *</span> &nbsp;&nbsp;
+					    					<span style="color:red;"  id="errMsg_us_spwd"></span>
+					    				</td>
+						     		</tr>
+					  				
+									
+					  				
+					  				
+					   			</table>
+							</td>
+      					</tr>
+    				</table>
+    			
+    				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      				<tr>
+        				<td align="center">
+							<input type="button" name="Submit" value="保存" class="button" onclick="save();"/>
+							<input type="reset" name="Submit3" value="重置" class="button" onclick="reset();"/>
+							<input type="button" name="Submit2" value="返回" class="button" onclick="window.history.go(-1);"/>
+						</td>
+      				</tr>
+    				</table>
+    			</td>
+  			</tr>
+		</table>
+    </td>
+    <td background="../../../images/mail_rightbg.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  valign="bottom" background="../../../images/mail_leftbg.gif"><img src="../../../images/buttom_left2.gif" width="17" height="17" /></td>
+    <td  valign="bottom" background="../../../images/buttom_bgs.gif"><img src="../../../images/buttom_bgs.gif" width="100%" height="17"></td>
+    <td  valign="bottom" background="../../../images/mail_rightbg.gif"><img src="../../../images/buttom_right2.gif" width="16" height="17" /></td>
+  </tr>
+</table>
+
+
+
+
+</form>
+</body>
+</html>

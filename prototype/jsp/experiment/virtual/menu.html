@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<base target="main1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理页面</title>
+
+<script src="../../../js/prototype.lite.js" type="text/javascript"></script>
+<script src="../../../js/moo.fx.js" type="text/javascript"></script>
+<script src="../../../js/moo.fx.pack.js" type="text/javascript"></script>
+
+<link  href="../../../css/left.css" rel="stylesheet" type="text/css" />
+<link  href="../../../css/skin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var path="../../../";
+</script>
+<script src="../../../js/new_tree.js" type="text/javascript"></script>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table">
+	<tr>
+		<td nowrap valign="top" align="left"><!--菜单树开始--> 
+                  			<script language="javascript"> 
+                  			
+							 if (document.getElementById)
+							 {  
+							 	var t0=new WebFXTree("<b>课程</b>","list.html","searchA=|menu=|ud_sname=|searchC=|sh_sname=|ud_sname1=|searchB=");
+						     	var t001=new WebFXTreeItem("<b>计算机网络基础</b>","list.html","searchA=SH001|menu=0|sh_sname=主校区");
+						     	t0.add(t001);
+						     	var node001001 = new WebFXTreeItem("网线制作实验","update.html","searchA=SH001|menu=0|sh_sname=主校区|searchB=ZXQ0001");
+								t001.add(node001001);
+								var node001002 = new WebFXTreeItem("TCP/IP协议网络工具的使用","update.html","searchA=SH001|menu=0|sh_sname=主校区|searchB=ZXQ0001");
+						        t001.add(node001002);
+						        var t002=new WebFXTreeItem("<b>计算机编程语言基础</b>","list.html","searchA=SH002|menu=0|sh_sname=良乡校区");
+						     	t0.add(t002);
+						     	var node002001 = new WebFXTreeItem("冒泡排序实验","update.html","searchA=SH002|menu=0|sh_sname=良乡校区|searchB=LXXQ0001");
+								t002.add(node002001);
+								var node002002 = new WebFXTreeItem("循环链表实验","update.html","searchA=SH002|menu=0|sh_sname=良乡校区|searchB=LXXQ0002");
+						        t002.add(node002002);											
+																											
+								    document.write(t0);
+								    t0.expand();
+						     	}
+								
+								</script> 
+								<input type="hidden" name="selText">
+								<input type="hidden" name="iSize">
+								<input type="hidden" name="selTreeID">
+								<input type="hidden" name="selNodeID">
+                  	<!--菜单树结束--> </td>
+	</tr>
+</table>
+
+
+</body>
+</html>

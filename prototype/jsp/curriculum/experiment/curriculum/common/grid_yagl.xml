@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+    <row id="1">
+        <cell>1</cell>
+        <cell>软中断程序设计实验</cell>
+        <cell>汇编语言程序设计</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>高芳芳</cell>
+        <cell>未审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell><![CDATA[审核^javascript:alert("审核通过当前预案！");^_self]]></cell>
+    </row>
+    <row id="2">
+        <cell>1</cell>
+        <cell>子网划分实验</cell>
+        <cell>网络基础</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>张磊</cell>
+        <cell>已审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell></cell>
+    </row>
+    <row id="3">
+        <cell>0</cell>
+        <cell>ASP.NET存取数据库</cell>
+        <cell>.NET开发技术</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>李伟健</cell>
+        <cell>未审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell><![CDATA[审核^javascript:alert("审核通过当前预案！");^_self]]></cell>
+    </row>
+    <row id="4">
+        <cell>1</cell>
+        <cell>继承与接口</cell>
+        <cell>面向对象程序设计基础</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>周慧</cell>
+        <cell>已审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell></cell>
+    </row>
+    <row id="5">
+        <cell>0</cell>
+        <cell>网络监听与端口扫描</cell>
+        <cell>网络安全技术</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>方浩</cell>
+        <cell>已审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell></cell>
+    </row>
+    <row id="6">
+        <cell>0</cell>
+        <cell>8255A并行口实验 输出方波</cell>
+        <cell>微机原理</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>郑名明</cell>
+        <cell>未审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell><![CDATA[审核^javascript:alert("审核通过当前预案！");^_self]]></cell>
+    </row>
+    <row id="7">
+        <cell>0</cell>
+        <cell>串行通信实验</cell>
+        <cell>单片机原理及应用</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>李莉</cell>
+        <cell>未审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell><![CDATA[审核^javascript:alert("审核通过当前预案！");^_self]]></cell>
+    </row>
+    <row id="8">
+        <cell>0</cell>
+        <cell>基于Servlet的MVC模式</cell>
+        <cell>JSP技术</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>周敏</cell>
+        <cell>已审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell></cell>
+    </row>
+    <row id="9">
+        <cell>0</cell>
+        <cell>了解Linux内核及内核模块</cell>
+        <cell>Linux操作系统</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>王伟</cell>
+        <cell>已审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell></cell>
+    </row>
+    <row id="10">
+        <cell>0</cell>
+        <cell>汇编语言程序的调试与运行</cell>
+        <cell>汇编语言程序设计</cell>
+        <cell>2013-2-2</cell>
+        <cell>2013-2-2</cell>
+        <cell>吴敬力</cell>
+        <cell>已审核</cell>
+        <cell><![CDATA[编辑^page01_ylya_yl.html^_self]]></cell>
+        <cell></cell>
+    </row>
+</rows>
