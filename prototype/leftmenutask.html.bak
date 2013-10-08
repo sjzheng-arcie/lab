@@ -43,7 +43,6 @@ id.style.color = '#000000';
 
 				  <li><a href="jsp/task/task/leaderlist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;任务管理</a></li>
 					<li><a href="jsp/task/task/mytasklist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;我的任务列表</a></li>
-					<li><a href="jsp/task/task/myworklist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;我的工作列表</a></li>
           <li><a href="jsp/task/task/userlist.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;任务评分</a></li>
 		      <li><a href="jsp/task/scoitem/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;评分项管理</a></li>
 		   	

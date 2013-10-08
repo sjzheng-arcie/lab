@@ -156,7 +156,8 @@ function toDelete(){
       <tr >
         <td valign="top" class="STYLE10">
 	
-		<span style="white-space:nowrap">&nbsp;&nbsp;任务名称:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
+		<span style="white-space:nowrap">&nbsp;&nbsp;任务名称名称:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
+	<span style="white-space:nowrap">&nbsp;&nbsp;任务:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
 		<span style="white-space:nowrap">&nbsp;&nbsp;任务完成时间:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>			
 		<span style="white-space:nowrap">&nbsp;&nbsp;<a href="javascript:void(0);" style="cursor:hand" onclick="findInfo()"><img src="../../../images/zoom.png" width="15" height="15" border="0"/> 查询</a></span>
     	
@@ -176,6 +177,9 @@ function toDelete(){
             <td>
 	            <div align="right">
 	            	<span class="STYLE1" style="white-space:nowrap">
+						<a href="add.html" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">新增</span></a>&nbsp; 
+      					<a href="#" onclick="toUpdate();"><img src="../../../images/edit_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">修改</span></a>&nbsp;
+      					<a href="#" onclick="toDelete();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">删除</span></a>&nbsp;&nbsp;
                 <a href="#" onclick="toRoom();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">打印</span></a>&nbsp;&nbsp;
 	                </span>
 	           </div>
