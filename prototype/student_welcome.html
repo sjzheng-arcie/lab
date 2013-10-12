@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>welcome</title>
+<link rel="stylesheet" href="css/mian.css"  type="text/css"/>
+</head>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var indexMainCon_height=pageHeight();
+	$(".indexMainCon").height(indexMainCon_height);
+	$(".indexNews").height(indexMainCon_height/2-12);
+	$(".indexteacherapply").height(indexMainCon_height/2-12);
+	$(".indexNotice").height(indexMainCon_height/2-12);
+$(window).resize(function(){
+   $(".indexMainCon").height(pageHeight());
+}); 
+
+function pageHeight(){
+    if($.browser.msie){
+        return document.compatMode == "CSS1Compat"? document.documentElement.clientHeight :
+        document.body.clientHeight;
+    }else{
+        return self.innerHeight;}
+}
+	
+	})
+
+
+</script>
+
+<body style="width:100%;">
+<div class="indexMainCon">
+                	<div class="indexNews">
+                    	<h3><a href="javascript:void(0)">更多>></a><span>系统公告</span></h3>
+                        <div class="indexNewsCon">
+                        	<ul>
+                                <li><span>[2013年5月8日]</span><a href="remind.html">网络整改通知</a></li>
+                                <li><span>[2012年4月27日]</span><a href="remind.html">虚拟化实验室配电整改通知</a></li>
+
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="indexNotice">
+                    	<h3><span>个人通知</span></h3>
+                        <div class="indexNoticeCon">
+                        	<ul>
+                                <li><span>[2013年3月6日]</span><a href="remind.html">设备库盘点通知</a></li>
+                                <li><span>[2013年3月6日]</span><a href="remind.html">新设备入库通知</a></li>
+                                <li><span>[2013年3月6日]</span><a href="remind.html">定制设备已到达</a></li>
+                                <li><span>[2013年3月6日]</span><a href="remind.html">整流器的维修通知</a></li>
+                                <li><span>[2013年3月6日]</span><a href="remind.html">扰流器的通知</a></li>
+
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="indextrends indexteacherapply">
+                    <h3><a href="javascript:void(0)">更多>></a><span>我的实验课程</span></h3>
+   	         <table width="100%" border="0" cellspacing="0" style="border-color:#eeefff">
+  <tr class="title">
+    <td  height="24" align="center">序号</td>
+    <td  align="center">实验编号</td>
+    <td align="center">实验名称</td>
+    <td align="center">实验指导书</td>
+    <td align="center">实验题描述</td>
+    <td align="center">查看</td>
+  </tr>
+  <tr>
+    <td height="24" align="center">1</td>
+    <td align="center">SJ001</td>
+		<td align="center">模拟电路基础型实验</td>
+
+		<td align="center">模拟电路基础型实验实验指导书</td>
+
+		<td align="center">实验题描述</td>
+		<td align="center"><a href="jsp/experiment/experimentpaper/paperinfo.html">查看实验</a></td>
+
+  </tr>
+  <tr>
+    <td height="24" align="center">2</td>
+    <td align="center">SY005</td>
+		<td align="center">单片机编码实验</td>
+
+		<td align="center">单片机编码实验指导书</td>
+
+		<td align="center">单片机实验题描述</td>
+		<td align="center"><a href="jsp/experiment/experimentpaper/paperinfo.html">查看实验</a></td>
+
+  </tr>
+  <tr>
+    <td height="24" align="center">3</td>
+    <td align="center">SJ001</td>
+		<td align="center">嵌入式输入设备设计实验</td>
+
+		<td align="center">嵌入式输入设备设计实验指导书</td>
+
+		<td align="center">嵌入式输入设备设计</td>
+		<td align="center"><a href="jsp/experiment/experimentpaper/paperinfo.html">查看实验</a></td>
+
+  </tr>
+  <tr>
+    <td height="24" align="center">4</td>
+    <td align="center">SJ002</td>
+		<td align="center">数字电路基础型实验</td>
+
+		<td align="center">数字电路基础型实验实验指导书</td>
+
+		<td align="center">实验题描述</td>
+		<td align="center"><a href="jsp/experiment/experimentpaper/paperinfo.html">查看实验</a></td>
+
+  </tr>
+</table>
+
+                       
+                    </div>
+                   
+                </div>
+</body>
+</html>

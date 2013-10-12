@@ -131,6 +131,10 @@ function toDelete(){
 			document.getElementById("divwidth").style.width=document.body.scrollWidth-35+"px";
 		}
 	}
+	function addend(){
+		document.form1.action="list.html";
+		document.form1.submit();
+	}
 </script>
 
 </head>
@@ -138,12 +142,16 @@ function toDelete(){
 <body onload="getwidth()"  onresize="getwidth()">
 
 <form name="form1" method="post">
+
+
+
+
 <table width="98%"   border="0" cellpadding="0" cellspacing="0" >
   <tr>
     <td width="17" valign="top" background="../../../images/mail_leftbg.gif"><img src="../../../images/left-top-right.gif" width="17" height="29" /></td>
     <td valign="top" background="../../../images/content-bg.gif"><table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
       <tr>
-        <td height="31"><div class="titlebt">系统管理 > 参数管理</div></td>
+        <td height="31"><div class="titlebt">实验评分 > 实验报告分数</div></td>
       </tr>
     </table></td>
     <td width="16" valign="top" background="../../../images/mail_rightbg.gif"><img src="../../../images/nav-right-bg.gif" width="16" height="29" /></td>
@@ -156,12 +164,9 @@ function toDelete(){
       <tr >
         <td valign="top" class="STYLE10">
 	
-		<span style="white-space:nowrap">&nbsp;&nbsp;访问名称.:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-		<span style="white-space:nowrap">&nbsp;&nbsp;表示名称:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-	<span style="white-space:nowrap">&nbsp;&nbsp;参数值:<input type="text" name="searchB1" id="searchB1" value="" style="width:100px;"/></span>
-		<span style="white-space:nowrap">&nbsp;&nbsp;<a href="javascript:void(0);" style="cursor:hand" onclick="findInfo()"><img src="../../../images/zoom.png" width="15" height="15" border="0"/> 查询</a></span>
-    	
+	
          
+		         
 		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -171,15 +176,12 @@ function toDelete(){
             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="6%" height="19" valign="bottom"><div align="center"><img src="../../../images/tb.gif" width="14" height="14" /></div></td>
-                <td width="94%" valign="bottom"><span class="STYLE1" style="white-space:nowrap">参数信息列表</span></td>
+                <td width="94%" valign="bottom"><span class="STYLE1" style="white-space:nowrap">课程实验报告评分</span></td>
               </tr>
             </table></td>
             <td>
 	            <div align="right">
 	            	<span class="STYLE1" style="white-space:nowrap">
-						<a href="add.html" ><img src="../../../images/add_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">新增</span></a>&nbsp; 
-      					<a href="#" onclick="toUpdate();"><img src="../../../images/edit_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">修改</span></a>&nbsp;
-      					<a href="#" onclick="toDelete();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">删除</span></a>&nbsp;&nbsp;
                 <a href="#" onclick="toRoom();"><img src="../../../images/del_min.gif" width="10" height="10" border="0"/> <span class="STYLE1">打印</span></a>&nbsp;&nbsp;
 	                </span>
 	           </div>
@@ -192,67 +194,65 @@ function toDelete(){
   <tr>
     <td>
 	<div id="divwidth"  style="overflow:auto;overflow-y:hidden;"> 
-   	<table width="100%" class="table" id="table1" border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce">
+   	<table  width="100%"  border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce">
 		<tr>
-	  	<td width="40" height="20" bgcolor="d3eaef" class="STYLE10">
-	  	<div align="center">
-			<input type="checkbox" name="checkbox" id="checkbox" onclick="checkAll(this);"/>
-	  	</div>
+	  	<td width="20" height="20" bgcolor="d3eaef" >	
+
 	  	</td>
 	  	<td width="40" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">序号</span></div></td>
-	  	<td width="40" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">访问名称</span></div></td>
-	  	<td width="100" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">表示名称</span></div></td>
-	  	<td width="100" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">参数值</span></div></td>
-	  	<td width="80" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">描述</span></div></td>
-		<td width="100" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">是否可删除</span></div></td>
-		<td width="100" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">备注</span></div></td>
-			
+	  	<td width="40" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">实验名</span></div></td>
+	  	<td width="100" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">实验报告分数</span></div></td>
+		<td width="100" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">签到情况</span></div></td>
+	  	
 		
+				
 		</tr>
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
 		<td>1 </td>
-		<td >REID</td>
-		<td >申报醒目编号</td>
-    <td >0142</td>
-		<td >系统用户参数</td>
-    <td >不可删除</td>
-		<td>我是备注</td>
+		<td >编程实验</td>
+
+		<td >6</td>
+		<td >7</td>
+
 
 		</tr>		
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
 		<td>2 </td>
-		<td >BUYONE</td>
-		<td >单价</td>
-    <td >10</td>
-		
-    <td >单价超过则为自行采购</td>
-	<td >不可删除</td>
-    <td >我也是备注</td>
+		<td >编程实验</td>
+
+		<td >6</td>
+		<td >7</td>
 
 		</tr>		
         	<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
 		<td>3 </td>
-		<td >BUYMORE</td>
-		<td >总价值</td>
-    <td >10</td>
-		<td >设备总价值不超过这些则自行购买</td>
-    <td >不可删除</td>
-    <td >我还是备注</td>
+		<td >编程实验</td>
+
+		<td >6</td>
+		<td >7</td>
 
 		</tr>	
+
 		<tr bgcolor="#ffffff" align="center" class="STYLE19">
  		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
-		<td>4 </td>
-		<td >BUYTYPE</td>
-		<td >采购类型</td>
-    <td >万元以上</td>
-		<td >系统留用</td>
-    <td >不可删除</td>
-    <td >我真的是备注</td>
-		
+		<td>4</td>
+		<td >编程实验</td>
+
+		<td >6</td>
+		<td >7</td>
+
+		</tr>	
+
+		<tr bgcolor="#ffffff" align="center" class="STYLE19">
+ 		<td height="20"><input name="idcheckbox"  type="checkbox"   value="admin" onclick="checkOne(this)"/></td>
+		<td>5</td>
+		<td >编程实验</td>
+
+		<td >6</td>
+		<td >7</td>
 
 		</tr>	
         <tr height="16px"></tr>	
@@ -286,6 +286,14 @@ function toDelete(){
     	</td> 
     	</tr>
     </table>
+    
+    
+    
+    
+    
+    
+    
+    
     </td>
     <td background="../../../images/mail_rightbg.gif">&nbsp;</td>
   </tr>
@@ -295,6 +303,99 @@ function toDelete(){
     <td  valign="bottom" background="../../../images/mail_rightbg.gif"><img src="../../../images/buttom_right2.gif" width="16" height="17" /></td>
   </tr>
 </table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="17" valign="top" background="../../../images/mail_leftbg.gif">
+    	<img src="../../../images/left-top-right.gif" width="17" height="29" />
+    </td>
+    <td valign="top" background="../../../images/content-bg.gif">
+        <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+        <tr>
+            <td height="31"><div class="titlebt">实验评分 > 课程整体成绩</div></td>
+        </tr>
+        </table>
+    </td>
+    <td width="16" valign="top" background="../../../images/mail_rightbg.gif">
+    	<img src="../../../images/nav-right-bg.gif" width="16" height="29" />
+    </td>
+  </tr>
+  <tr>
+	<td valign="middle" background="../../../images/mail_leftbg.gif">&nbsp;</td>
+    <td valign="top" bgcolor="#F7F8F9">
+       	<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+    			<td height="30">
+    				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      					<tr>
+        					<td height="24" bgcolor="#353c44">
+        						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          							<tr>
+            							<td>
+            								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              									<tr>
+                									<td width="6%" height="19" valign="bottom"><div align="center"><img src="../../../images/tb.gif" width="14" height="14" /></div></td>
+                									<td width="94%" valign="bottom"><span class="STYLE1">实验评分</span></td>
+              									</tr>
+            								</table>
+            							</td>
+            							<td><div align="right"><span class="STYLE1">&nbsp;</span><span class="STYLE1"> &nbsp;</span></div>
+              							</td>
+          							</tr>
+        						</table>
+        					</td>
+      					</tr>
+    				</table>
+    			</td>
+  			</tr>
+ 			<tr valign="top">
+    			<td>
+    				<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#a8c7ce" >
+      					<tr bgcolor="#E3E9EE">
+        					<td   bgcolor="#E3E9EE" align="center">
+					  			<table border="0" cellpadding="0" cellspacing="0" style="width:60%;height:30px;font-size:18px;font-family: Verdana, Arial, Helvetica, sans-serif;"  bgcolor="#E3E9EE">
+					 				<tr>
+					    				<td nowrap align="right"  >平日成绩:</td>
+					    				<td nowrap align="center" >
+					    					6
+					    				
+					     				</td>
+					    				<td nowrap align="right"  >期末成绩:</td>
+					    				<td nowrap align="center">
+					    					7
+					 
+					     				</td>
+										<td nowrap align="right">最终成绩:</td>
+					    				<td nowrap align="center">
+					    				8
+					    		
+					    			</tr>
+					    			
+					  				
+					   			</table>
+					   		
+							</td>
+      					</tr>
+    				</table>
+    				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      				<tr>
+        				<td align="center">
+							<input type="button" name="Submit2" value="返回" class="button" onclick="window.history.go(-1);"/>
+						</td>
+      				</tr>
+    				</table>
+    			</td>
+  			</tr>
+		</table>
+    </td>
+    <td background="../../../images/mail_rightbg.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td  valign="bottom" background="../../../images/mail_leftbg.gif"><img src="../../../images/buttom_left2.gif" width="17" height="17" /></td>
+    <td  valign="bottom" background="../../../images/buttom_bgs.gif"><img src="../../../images/buttom_bgs.gif" width="100%" height="17"></td>
+    <td  valign="bottom" background="../../../images/mail_rightbg.gif"><img src="../../../images/buttom_right2.gif" width="16" height="17" /></td>
+  </tr>
+</table>
+
 </form>
 </body>
 </html>

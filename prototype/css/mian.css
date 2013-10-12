@@ -26,6 +26,9 @@ a:hover{text-decoration:underline;}
 .indextrends span{ background:url(../img/index/new.jpg) no-repeat left center;}
 .indexNoticeCon{ padding:0 10px; margin-top:10px;}
 .indexNoticeCon p{ line-height:22px; text-indent:2em;}
+.indexteacherapply span{ background:url(../img/index/n.jpg) no-repeat left center;}
+.indexteacherapply{width:98%; border:1px solid #ccc; margin-left:10px;  float:left; display:inline; margin-top:10px; height:auto}
+
 .title td{ font-size:13px; color:#0051a8}
 
 

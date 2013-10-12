@@ -224,7 +224,9 @@ function toDelete(){
 		<td>2 </td>
 		<td >0102</td>
 		<td >张飞</td>
-    <td ><a href="score.html">评分</a></td>
+    <td ><input type="text" style="width:30px"  value="12"/></td>
+		<td ><input type="text" style="width:30px"  value="68"/></td>
+    <td ><input type="text" style="width:30px"  value="80"/></td>
 	<td >平日不上课</td>
     
 
@@ -234,7 +236,9 @@ function toDelete(){
 		<td>3 </td>
 		<td >0103</td>
 		<td >刘小贝</td>
-    <td ><a href="score.html">评分</a></td>
+    <td ><input type="text" style="width:30px"  value="20"/></td>
+		<td ><input type="text" style="width:30px"  value="60"/></td>
+    <td ><input type="text" style="width:30px"  value="80"/></td>
     <td >一般学生</td>
 
 		</tr>	
@@ -243,7 +247,9 @@ function toDelete(){
 		<td>4 </td>
 		<td >0104</td>
 		<td >袁绍</td>
-    <td ><a href="score.html">评分</a></td>
+    <td ><input type="text" style="width:30px"  value="40"/></td>
+		<td ><input type="text" style="width:30px"  value="80"/></td>
+    <td ><input type="text" style="width:30px" value="120"/></td>
     <td >优秀学生</td>
 		
 

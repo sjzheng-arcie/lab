@@ -18,7 +18,7 @@ document.form1.submit();
     <td valign="top" background="../../../images/content-bg.gif">
         <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
         <tr>
-            <td height="31"><div class="titlebt">系统管理 > 参数管理</div></td>
+            <td height="31"><div class="titlebt">系统管理 > 修改密码</div></td>
         </tr>
         </table>
     </td>
@@ -41,7 +41,7 @@ document.form1.submit();
             								<table width="100%" border="0" cellspacing="0" cellpadding="0">
               									<tr>
                 									<td width="6%" height="19" valign="bottom"><div align="center"><img src="../../../images/tb.gif" width="14" height="14" /></div></td>
-                									<td width="94%" valign="bottom"><span class="STYLE1">添加参数设置</span></td>
+                									<td width="94%" valign="bottom"><span class="STYLE1">修改密码</span></td>
               									</tr>
             								</table>
             							</td>
@@ -55,54 +55,36 @@ document.form1.submit();
     			</td>
   			</tr>
  			<tr valign="top">
-    			<td>
-    				<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#a8c7ce" >
-      					<tr bgcolor="#FFFFFF">
-        					<td   bgcolor="#FFFFFF">
-					  			<table border="0" cellpadding="2" cellspacing="1" style="width:100%;height:100%;font-size:12px;font-family: Verdana, Arial, Helvetica, sans-serif;"  bgcolor="#E3E9EE">
-					 				<tr>
-					    				<td nowrap align="right"  >访问名称:</td>
+    			<td align="center">
+    				<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#a8c7ce" >
+      					<tr bgcolor="#E3E9EE">
+        					<td   bgcolor="#E3E9EE">
+					  			<table align="center" border="0" cellpadding="2" cellspacing="1" style="width:50%;height:100%;font-size:12px;font-family: Verdana, Arial, Helvetica, sans-serif;"  bgcolor="#E3E9EE">
+					 				<tr >
+					    				<td nowrap align="right"  >原密码:</td>
 					    				<td nowrap >
-					    					<input name="us_sno" id="us_sno"class="text" style="width:154px" maxlength="20" valid="required|isAccount"  />
+					    					<input name="us_sno" id="us_sno"class="text"  />
 					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
-					    					<span style="color:red;"  id="errMsg_us_sno"></span>
 					     				</td>
-					    				<td nowrap align="right"  >表示名称:</td>
-					    				<td nowrap>
-					    					<input class="text" style="width:154px" maxlength="20" valid="required|isAccount" />
-					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
-					    					<span style="color:red;"  id="errMsg_us_sno"></span>
-					     				</td>
+					    				
 					    			</tr>
-					    			<tr>
-					    				<td nowrap align="right">参数值:</td>
+					    			
+					  				<tr>
+					    				<td nowrap align="right"  >新密码:</td>
 					    				<td nowrap>
-					    					<input name="us_sno"class="text" style="width:154px" maxlength="20" valid="required|isAccount"/>
-					    					
-					    				</td>
-					    				<td nowrap align="right">描述:</td>
-					    					
-					    					 <td nowrap  align="left"> <textarea></textarea></td>
+					    					<input type="password"/>
 					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
-					    					<span style="color:red;"  id="errMsg_us_sname"></span> 
-					    				</td>
+					     				</td>
 					    
 					  				</tr>
 					  				<tr>
-									    <td nowrap align="right" >是否可删：</td>
-									    <td  nowrap  align="left">	<select>
-					    							<option value="">--请选择--</option>
-														<option value="0" >不可删除</option>
-														<option selected="selected"value="1" >可删除</option>
-
-					    					</select></td>
-								
-					  		
-									    <td nowrap align="right" >备注：</td>
-									    <td nowrap  align="left"> <textarea></textarea></td>
-									   </tr>
-														  	
-
+					    			<td nowrap align="right"  >确认新密码:</td>
+					    				<td nowrap>
+					    					<input type="password"  />
+					    					<span style="color:red;">*</span>&nbsp;&nbsp; 
+					     				</td>
+					    
+					    			</tr>
 			
 					   			</table>
 							</td>
