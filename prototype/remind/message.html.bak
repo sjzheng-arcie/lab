@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>实验交流论坛--看贴</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gbk">
+<Link rel="stylesheet" type="text/css" href="../bbs/style/style.css" />
+</HEAD>
+
+<BODY>
+
+
+	</DIV>
+	<!--      本页主题的标题        -->
+	<DIV>
+		<TABLE cellSpacing="0" cellPadding="0" width="100%">
+			<TR>
+				<TH class="h">您收到的消息</TH>
+			</TR>
+			<TR class="tr2">
+				<TD>		<a href="message.htmm">上一页</a>|
+		<a href="message.html">下一页</a></TD>
+			</TR>
+		</TABLE>
+	</DIV>
+	
+	<!--      主题        -->
+	
+	<DIV class="t">
+		<TABLE style="BORDER-TOP-WIDTH: 0px; TABLE-LAYOUT: fixed" cellSpacing="0" cellPadding="0" width="100%">
+			<TR class="tr1">
+				<TH style="WIDTH:80px" align="center">
+					<B>设备处赵主任</B><BR/>
+
+					<DIV class="tipad gray">
+
+					<img src="../bbs/images/head/2.gif"/><BR/>
+					</DIV>
+			
+				</TH>
+				<TH>
+					<H4>全体注意</H4>
+					<DIV>新设备到了，请赶快到设备处领取</DIV>
+					<DIV class="tipad gray">
+						发表：[2007-07-30 08:37] &nbsp;
+						最后修改:[2007-07-30 08:37]
+						<A href="../bbs/manage/doDeleteReply.jsp">[删除]</A>
+						<A href="update.html">[回复]</A>
+					</DIV>
+				</TH>
+			</TR>
+		</TABLE>
+	</DIV>
+	
+	<!--      回复        -->
+	
+	<DIV class="t">
+		<TABLE style="BORDER-TOP-WIDTH: 0px; TABLE-LAYOUT: fixed" cellSpacing="0" cellPadding="0" width="100%">
+			<TR class="tr1">
+				<TH style="WIDTH:80px" align="center">
+					<B>设备处赵主任</B><BR/>
+
+					<DIV class="tipad gray">
+
+					<img src="../bbs/images/head/2.gif"/><BR/>
+					</DIV>
+			
+				</TH>
+				<TH>
+					<H4>全体注意</H4>
+					<DIV>新设备到了，请赶快到设备处领取</DIV>
+					<DIV class="tipad gray">
+						发表：[2007-07-30 10:32] &nbsp;
+						最后修改:[2007-07-30 08:37]
+						<A href="../bbs/manage/doDeleteReply.jsp">[删除]</A>
+						<A href="update.html">[回复]</A>
+					</DIV>
+				</TH>
+			</TR>
+		</TABLE>
+	</DIV>
+	
+	<DIV class="t">
+		<TABLE style="BORDER-TOP-WIDTH: 0px; TABLE-LAYOUT: fixed" cellSpacing="0" cellPadding="0" width="100%">
+			<TR class="tr1" align="center">
+				<TH style="WIDTH:80px" align="center">
+					<B>设备处赵主任</B><BR/>
+
+					<DIV class="tipad gray">
+
+					<img src="../bbs/images/head/2.gif"/><BR/>
+					</DIV>
+			
+				</TH>
+				<TH >
+					<H4>全体注意</H4>
+					<DIV>新设备到了，请赶快到设备处领取</DIV>
+					<DIV class="tipad gray">
+						发表：[2007-07-30 10:32] &nbsp;
+						最后修改:[2007-07-30 08:37]
+						<A href="../bbs/imanage/doDeleteReply.jsp">[删除]</A>
+						<A href="update.html">[回复]</A>
+					</DIV>
+				</TH>
+			</TR>
+		</TABLE>
+	</DIV>
+	
+</DIV>
+
+<!--      声明        -->
+</BODY>
+</HTML>

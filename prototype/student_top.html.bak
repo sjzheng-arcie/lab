@@ -38,7 +38,7 @@ function rs(){
 parent.main.location.href="bbs/frame.html";
 }
 function rs1(){ 
-parent.main.location.href="administrator_welcome.html";
+parent.main.location.href="student_welcome.html";
 }  
 </script>
 <base target="main">
@@ -48,18 +48,10 @@ parent.main.location.href="administrator_welcome.html";
 <div class="top">
      <div class="top_left"><img src="images/logo.gif" width="305" height="103"></div>
      <div class="top_right">
-          <div class="top_right_top"><span style="float:right">您好！张超 [超级管理员]|
-          	 <a  href="remind.html" target="main">短消息(5)</a>| <a  href="remind.html" target="main">提醒(5)</a>
-          	  |[退出]| 登陆 | <a  href="jsp/sys/password/update.html" target="main">修改密码</a> | 帮助？ </span></div>
+          <div class="top_right_top"><span style="float:right">您好！张超 [超级管理员]| 
+          	<a  href="remind.html" target="main">短消息(5)</a>| <a  href="remind.html" target="main">提醒(5)</a> |[退出]| 登陆 | <a  href="jsp/sys/password/update.html" target="main">修改密码</a> | 帮助？ </span></div>
           <ul class="top_right_menu">
-          	<li class="active"><a href="administrator_left.html" target="leftFrame" onclick=rs1();>首页</a></li>
-          	 <li><a href="administrator_leftmenusys.html" target="leftFrame">系统管理</a></li>
-          	 <li><a href="administrator_leftmenubasinfo.html" target="leftFrame">基础信息管理</a></li>
-          	<li><a href="administrator_leftmenulab.html" target="leftFrame">实验室管理</a></li>
-            <li><a href="administrator_leftmenu.html" target="leftFrame">教学资源管理</a></li>
-            <li><a href="administrator_leftmenuteach.html" target="leftFrame">实验教学管理</a></li>
-            <li><a href="new/left.html" target="leftFrame">预约管理</a></li>
-            <li><a href="administrator_leftmenutask.html" target="leftFrame">考核管理</a></li>
+          	<li class="active"><a href="student_left.html" target="leftFrame" onclick=rs1();>首页</a></li>
            <li><a href="bbs/left.html" target="leftFrame" onclick=rs();>论坛</a></li>
           </ul>
      </div>

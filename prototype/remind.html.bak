@@ -221,7 +221,7 @@ function setTab02(){
   <li onclick="setTab(0,0)" class="hover">短消息</li>
 
   <li onclick="setTab(0,1)">通知</li>
-  <li  id="tabselect3" onclick="setTab02()">公告</li>
+  <li  id="tabselect3" onclick="setTab(0,2)">公告</li>
 	<li onclick="setTab(0,3)">发送消息</li>
 
 

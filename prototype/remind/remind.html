@@ -178,21 +178,6 @@ function setTab(m,n){
  }
 
 }
-function setTab02(){
-
- var tli=document.getElementById("menu"+0).getElementsByTagName("li");
-
- var mli=document.getElementById("main"+0).getElementsByTagName("ul");
-
- for(i=0;i<tli.length;i++){
-
-  tli[i].className=i==2?"hover":"";
-
-  mli[i].style.display=i==2?"block":"none";
-
- }
-
-}
 
 
 //-->
@@ -221,8 +206,8 @@ function setTab02(){
   <li onclick="setTab(0,0)" class="hover">短消息</li>
 
   <li onclick="setTab(0,1)">通知</li>
-  <li  id="tabselect3" onclick="setTab02()">公告</li>
-	<li onclick="setTab(0,3)">发送消息</li>
+    <li onclick="setTab(0,2)">公告</li>
+	    <li onclick="setTab(0,3)">发送消息</li>
 
 
 
