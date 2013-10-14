@@ -37,7 +37,7 @@ H1 a {
 }
 .content{
 	width: 182px;
-	height: 26px;
+
 	
 }
 .MM ul {
@@ -59,7 +59,7 @@ H1 a {
 	padding-left: 0px;
 }
 .MM {
-	width: 182px;
+	width: 140px;
 	margin: 0px;
 	padding: 0px;
 	left: 0px;

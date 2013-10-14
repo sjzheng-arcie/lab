@@ -27,24 +27,21 @@ id.style.color = '#000000';
 <body>
 <table width="100%"  height="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#eef2fb">
   <tr>
-    <td width="182" valign="top"><div id="container">
-      <h1 class="type"><a href="javascript:void(0)">教学实验管理</a></h1>
+    <td width="148" valign="top"><div id="container">
+      <h1 class="type"><a href="javascript:void(0)">预约管理</a></h1>
       <div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td><img src="images/menu_topline.gif" width="182" height="5" /></td>
+            <td><img src="images/menu_topline.gif" width="148" height="5" /></td>
           </tr>
         </table>
         <ul class="MM">
-
-				  <li><a href="jsp/experiment/virtual/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;虚拟班级</a></li>
-          <li><a href="jsp/experiment/notice/list.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;通知公告</a></li>
-		      <li><a href="jsp/curriculum/experiment/curriculum/curriculum.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;课程信息管理</a></li>
-		  		<li><a href="jsp/experiment/experimentpaper/main.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;实验信息管理</a></li>
-		  		<li><a href="jsp/experiment/report/uploadmain.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;实验报告提交</a></li>
-		  		<li><a href="jsp/experiment/report/main.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;实验评分</a></li>
-		  		<li><a href="jsp/experiment/achievement/mainscore.html" onfocus="toFocus(this)" target="main">&nbsp;&nbsp;&nbsp;&nbsp;学期成绩评定</a></li>
-
+          <li><a href="pages_miyl/miyl01_ylsj/page01_ylya_new.html" onfocus="toFocus(this)" target="main">实验室预约申请</a></li>
+          <li><a href="pages_miyl/miyl01_ylsj/page01_ylya.html" onfocus="toFocus(this)" target="main">实验室预约管理</a></li>
+        </ul>
+		<ul class="MM">
+          <li><a href="pages_miyl/miyl02_yljk/page02_hysyy_new.html" onfocus="toFocus(this)" target="main">会议室预约申请</a></li>
+          <li><a href="pages_miyl/miyl02_yljk/page02_hysyy.html" onfocus="toFocus(this)" target="main">会议室预约管理</a></li>
         </ul>
       </div>
       </div>

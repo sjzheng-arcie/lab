@@ -55,11 +55,11 @@ H1 a {
 	display: block;
 	text-decoration: none;
 	height: 26px;
-	width: 140px;
+	width: 182px;
 	padding-left: 0px;
 }
 .MM {
-	width: 140px;
+	width: 182px;
 	margin: 0px;
 	padding: 0px;
 	left: 0px;
@@ -76,7 +76,7 @@ H1 a {
 	background-image: url(../images/menu_bg2.gif);
 	background-repeat: no-repeat;
 	height: 26px;
-	width: 140px;
+	width: 182px;
 	display: block;
 	text-align: center;
 	margin: 0px;
@@ -96,7 +96,7 @@ H1 a {
 	margin: 0px;
 	padding: 0px;
 	height: 26px;
-	width: 140px;
+	width: 182px;
 	text-decoration: none;
 }
 .MM a:hover {
@@ -112,7 +112,7 @@ H1 a {
 	margin: 0px;
 	padding: 0px;
 	height: 26px;
-	width: 140px;
+	width: 182px;
 	text-decoration: none;
 }
 .MM a:active {
@@ -124,7 +124,7 @@ H1 a {
 	background-image: url(../images/menu_bg2.gif);
 	background-repeat: no-repeat;
 	height: 26px;
-	width: 140px;
+	width: 182px;
 	display: block;
 	text-align: center;
 	margin: 0px;
