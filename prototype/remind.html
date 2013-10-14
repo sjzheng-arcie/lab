@@ -194,14 +194,26 @@ function setTab02(){
 
 }
 
+ String.prototype.getQueryString = function(name)
+ {
+   var reg = new RegExp("(^|&|\\?)"+ name +"=([^&]*)(&|$)"), r;
+   if (r=this.match(reg)) return unescape(r[2]); return null;
+ };
+ var sId = location.search.getQueryString("id");
+ function changeTab(name){
+ 	
 
-//-->
+			setTab(0,name);
+ 		
+ 	}
+
 
 </script>
 
+
 </head>
 
-<body>
+<body onload="changeTab(sId)">
 
 <br />
 
@@ -215,7 +227,7 @@ function setTab02(){
 
 
 
-<div id="tabs0">
+<div id="tabs0" >
  <ul class="menu0" id="menu0">
 
   <li onclick="setTab(0,0)" class="hover">¶ÌÏûÏ¢</li>
